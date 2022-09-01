@@ -1,0 +1,303 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	font-family: "microsoft yahei";
+}
+body{
+		background-color: #f8f8f8;
+		overflow: hidden; /* 隐藏滚动条  */
+}
+.header{
+	height: 70px;
+	background-color: #467FE6;
+}
+.header .logo{
+	background: url(../img/logo2.png) no-repeat;
+	height: 70px;
+	font-size: 26px;
+	color: #fff;
+	line-height: 70px;
+	padding-left: 60px;
+	font-weight: bold;
+	float: left;
+	width: 400px;
+}
+.header .user{
+	height: 70px;
+	color: #fff;
+	line-height: 70px;
+	padding-left: 60px;
+	float: right;
+	margin-right: 20px;
+	font-size: 16px;
+	padding: 0px 15px;
+	cursor: pointer;
+}
+.header .user:hover ul{
+	display: block;
+}
+.header .user .point{
+	float: right;
+	margin-top: 25px;
+	margin-left: 3px;
+}
+.header .user ul{
+	list-style: none;
+	background-color: #fff;
+	box-shadow: 2px 2px 3px #ccc;
+	position: absolute;
+	z-index: 999999;
+	display: none;
+}
+.header .user ul li{
+	height: 40px;
+	line-height: 40px;
+	color: #333333;
+	font-size: 14px;
+	font-weight: 600;
+	border-bottom: 1px dotted #ccc;
+}
+.header .user ul li:hover{
+	background-color: #ccc;
+	
+}
+.header .user ul li a{
+	color: #333;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	display: block;
+	padding: 0px 20px;
+}
+.header .user ul li a:hover{
+	background-color: #f2f7ff;
+	
+}
+.left{
+	position: absolute;
+	width: 200px;
+	float: left;
+	left: 0px;
+	bottom: 0px;
+	top: 70px;
+	background-color: #FFF;
+	border-right: 1px solid #E1E1E1;
+	text-align: center;
+}
+.left .title{
+	height: 48px;
+	line-height: 48px;
+	background-color: #e9e9e9;
+	font-size: 15px;
+	color: #333;
+	font-weight: bold;
+	text-align: center;
+}
+.menux p{
+	height: 40px;
+	line-height: 40px;
+	background-color: #F8F8F8;
+	text-align: center;
+	border-bottom: 1px solid #e1e1e1;
+}
+.menux p:hover{
+	background-color: #467FE6;
+	color: #FFFFFF;
+	cursor: pointer;/* 改变悬停时光标类型 */
+}
+.menux p:hover i{
+	color: #FFFFFF;
+	cursor: pointer;/* 改变悬停时光标类型 */
+}
+.menux p i{
+	color: #467FE6;
+}
+.menux p .point{
+	float: right;
+	margin-top: 12px;
+	margin-right: 10px;
+	color: #999999 !important;/* 防止颜色被改变 */
+}
+.menux ul{
+	list-style: none;
+	display: none;/* 关闭所有的ul,以便控制开启 */
+}
+.menux ul li{
+	line-height: 36px;
+	height: 36px;
+	border-bottom: 1px solid #E1E1E1;
+	box-sizing: border-box;
+}
+.menux ul li:hover{
+	background-color: #f2f7ff;
+	color: #467FE6;
+}
+.menux ul li a{
+	display: block;
+	padding-left: 5px;
+	color: #666666;
+	text-decoration: none;
+}
+.menux ul li a:hover{
+	color: #467FE6;
+}
+.menux ul li i {
+	color: #467FE6;
+}
+.main{
+	position: absolute;
+	float: left;
+	/* background-color: #FFF; */
+	left: 210px;
+	right: 0px;
+	bottom: 0px;
+	top: 70px;
+}
+.location{
+	height: 40px;
+	line-height: 40px;
+	border-left: 1px solid #f0f0f0;
+	border-bottom: 1px solid #f0f0f0;
+	border-right: 1px solid #f0f0f0;
+	background-color: #fff;
+}
+.condition{
+	background-color: #fff;
+	border: 1px solid #f0f0f0;
+	margin-top: 10px;
+	padding: 10px 5px;
+	color: #666;
+}
+.condition input{
+	height: 23px;
+	border: 1px solid #E0E0E0;
+	border-radius: 4px;
+}
+.condition button{
+	margin-right: 10px;
+	background-color: #467FE6;
+	color: #fff;
+	padding: 6px 10px;
+	font-size: 12px;
+	border: 0px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.condition button:hover{
+	background-color: #0064CD;
+}
+.mybutton{
+	margin-right: 10px;
+	background-color: #467FE6;
+	color: #fff;
+	padding: 6px 10px;
+	font-size: 12px;
+	border: 0px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.mybutton:hover{
+	background-color: #0064CD;
+}
+.tablelist{
+	margin-top: 10px;
+	width: 100%;
+	background-color: #fff;
+	border-collapse: collapse;/* 合并边框 */
+}
+.tablelist td,th{
+	height: 30px;
+	border: 1px solid #e0e0e0;
+}
+.tablelist td{
+	padding: 0px 2px;
+}
+.tablelist th{
+	background-color: #f8f8f8;
+}
+.tablelist tr:nth-child(odd){
+	background-color: #fff;
+}
+.tablelist tr:nth-child(even){
+	background-color: #f8f8f8;
+}
+.tablelist tr:hover{
+	background-color: #f2f7ff;
+}
+.tablelist .edit{
+	color: #005f9b;
+}
+.tablelist .remove{
+	color: crimson;
+}
+.tablelist .edit, .tablelist .remove{
+	background-color: transparent;
+	border: 0px;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.page{
+	width: 100%;
+	border-bottom: 1px solid  #E0E0E0;
+	border-right: 1px solid #E0E0E0;
+	border-left: 1px solid #E0E0E0;
+	background-color: #fff;
+	border-collapse: collapse;
+	height: 35px;
+}
+.page td{
+	padding-left: 2px;
+}
+.page button{
+	margin-right: 10px;
+	background-color: #467FE6;
+	color: #fff;
+	padding: 3px 5px;
+	font-size: 12px;
+	border: 0px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.page button:hover{
+	background-color: #0064CD;
+}
+.page-no{
+	width: 40px;
+	border-radius: 4px;
+	border: 1px solid #E1E1E1;
+}
+.add{
+	position: absolute;
+	background-color: #fff;
+	border: 1px solid #F0F0F0;
+	bottom: 0px;
+	top: 10px;
+	right: 0px;
+	left: 0px;
+}
+.tableadd{
+	width: 100%;
+	margin: auto;
+		margin-top: 20px;
+}
+.tableadd td {
+	height: 35px;
+	padding-left: 2px;
+	color: #666;
+}
+.tableadd td input{
+	height: 25px;
+	border: 1px solid #E0E0E0;
+	border-radius: 4px;
+}
+.tableadd td button{
+	margin-right: 10px;
+	background-color: #467FE6;
+	color: #fff;
+	padding: 6px 10px;
+	font-size: 12px;
+	border: 0px;
+	border-radius: 4px;
+	cursor: pointer;
+}
